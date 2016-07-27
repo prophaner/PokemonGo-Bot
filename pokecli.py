@@ -187,9 +187,7 @@ def init_config():
 
 
 def main():
-    # log settings
-    # log format
-    #logging.basicConfig(level=logging.DEBUG, format='%(asctime)s [%(module)10s] [%(levelname)5s] %(message)s')
+    logging.basicConfig(filename='log.log', format='%(asctime)s %(message)s')
 
     sys.stdout = codecs.getwriter('utf8')(sys.stdout)
     sys.stderr = codecs.getwriter('utf8')(sys.stderr)
